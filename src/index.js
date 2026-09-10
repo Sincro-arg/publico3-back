@@ -9,6 +9,10 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
 });
 
+app.get('/salud', (req, res) => {
+  res.json({ estado: 'ok' });
+});
+
 app.get('/saludo/:nombre', (req, res) => {
   const { nombre } = req.params;
 
